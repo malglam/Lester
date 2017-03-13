@@ -1,0 +1,147 @@
+/*  Generador de Etiquetas para Reactivos Químicos
+ *
+ *  Copyright (C) 2011  Carmen López Martínez (klopez@ugr.es)
+ *                      Area de Asesoría y Apoyo para el Desarrollo de Aplicacones de Gestión
+ *			            CSIRC
+ *	            		Universidad de Granada
+ *  
+ *  Version: 1.0
+ *  Last Modified: 15 Mayo 2012
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+fieldset {
+    color: black;
+    padding: 5px;
+    position: relative;
+    border: 1px solid #bbbbbb;
+    background: #e2e2e3;    
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 12px;
+    margin-top:1em;
+    padding-top:.75em;
+
+}
+
+legend {
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+    position: absolute;
+    top: -1.3em;
+    left: -.3em;
+}
+
+.loader {
+    background: url("../imagenes/loader.gif") transparent center center no-repeat;
+    margin: auto;
+}
+
+.oculto {
+    visibility: hidden;
+}
+
+.error {
+    background-color:#FAE2DC;
+    border: 1px solid #F2B8AA;
+    color:#DD3B15;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.error_letra {
+    color: #DD3B15;
+}
+
+/****** BOTONES ******/
+
+.boton {
+    
+    
+    width:77px;
+    height:25px;
+    padding:0;
+    
+    float: right;
+    margin: 2px;
+}
+
+.boton_izq {  
+    width:77px;
+    height:25px;
+    padding:0;   
+    margin: 2px;
+}
+
+
+.centrado {
+    width: 80%;
+    margin: auto;
+    border: #bbbbbb 1px solid;
+    padding: 5px;
+}
+
+.campobusqueda {
+    border-bottom: 0.05em solid;
+    width: 100%;
+    display: block;
+    padding: 0.2em;
+}
+
+.etiqueta {
+    font-weight: bold;
+    display: block;
+    float: left;
+    width: 200px;
+    margin-right: 16px;
+    text-align: right;
+}
+
+div#contenido a.masinfo {
+    background-color: #838286;
+    color: white;
+    border-radius: 2px;
+    padding:0.4em 0.4em 0.3em;
+    text-align: left;
+    text-decoration: none;
+}
+
+div#contenido a.masinfo:hover {
+    background-color: #e04f2d;
+}
+
+.formula {
+    background-color: #e2e2e3;
+    font-weight: bold;    
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 2px;
+    width: 50%;
+    margin: auto;
+    border: 1px solid #6d6c71;
+    font-size: 75%;
+
+}
+
+div#contenido p.ayuda {
+    font-size: 75%;
+    text-align: justify;
+    margin-bottom: 5px;
+    background-image: none;
+}

@@ -1,0 +1,38 @@
+Lester - Generador de Etiquetas para Reactivos Químicos
+
+Instalación rápida
+------------------
+
+- Teniendo el servidor de aplicaciones Apache Tomcat o cualquier otro servidor que ejecute 
+aplicaciones Java, podemos descargarnos el fichero .war de la aplicación y desplegarlo en el 
+servidor directamente. La aplicación funcionará correctamente.
+
+Instalación personalizada
+-------------------------
+
+- Si deseamos revisar el código y hacer una instalación más personalizada podemos bajarnos los
+ fuentes del proyecto con el siguiente comando
+
+svn checkout https://forja.rediris.es/svn/lester
+
+Esto nos proporcionará el código de la aplicación, estructurado en dos directorios: src y web
+
+En el directorio src nos encontraremos las clases necesarias para la ejecución de la aplicación. 
+Para instalarlos en el servidor tendremos que compilarlas para conseguir el fichero .class. Para que
+estas clases compilen es necesario incluir en el classpath de Java el directorio donde hemos 
+almacenado la librería FOP y las demás librerías de las que depende esta, necesarias para la
+compilación.
+
+Una vez compiladas las clases, en el servidor de aplicaciones que tengamos instalado, crearemos un 
+contenedor donde copiaremos los ficheros incluidos en la carpeta web. Para que la aplicación 
+funcione correctamente es necesario tener instalado jquery. Si ya lo tenemos instalado en nuestro 
+servidor, podremos usar el que ya tenemos modificando en el fichero cabecera.jsp para indicar la 
+localización del mismo. Si no, habrá que descargarlo e instalarlo, indicando del mismo modo la 
+localización en el fichero cabecera.jsp. Por defecto, este fichero considera que jquery está 
+instalado dentro del directorio web/scripts.
+
+En el directorio WEB-INF/classes de ese contenedor pondremos el directorio laboratorios con los 
+class que acabamos de compilar. En el WEB-INF/lib copiaremos los .jar de la librería FOP y de las 
+demás librerías de las que depende. Una vez copiados todos los ficheros, reiniciamos el 
+contenedor y la aplicación funcionará correctamente.
+
