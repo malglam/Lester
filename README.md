@@ -1,4 +1,4 @@
-Lester - Generador de Etiquetas para Reactivos Químicos
+# Lester - Generador de Etiquetas para Reactivos Químicos
 
 ¿Qué es Lester?
 ---------------
@@ -12,12 +12,12 @@ El programa necesita los siguientes ficheros y directorios para funcionar correc
 
 * Directorio conf: Aquí se encuentran los ficheros de configuración. La aplicación usa dos ficheros
 de configuración:
-- etiquetas.properties: Aquí especificamos el directorio donde guardaremos los pictogramas. También
+	- etiquetas.properties: Aquí especificamos el directorio donde guardaremos los pictogramas. También
 le diremos las etiquetas que generará el programa. Nombrandolas desde etq0 en adelante, especificaremos
 el tamaño de la etiqueta, la leyenda que aparecerá en la página y el fichero xsl que implementa la 
 transformación del xml al PDF.
 
-- pictogramas.properties: Lista los pictogramas de peligrosidad mostraremos al usuario para incluirlos
+	- pictogramas.properties: Lista los pictogramas de peligrosidad mostraremos al usuario para incluirlos
 en las etiquetas. Debe incluir una lista de ficheros donde se encuentren las imágenes. 
 Estos ficheros deben estar almacenados en el directorio pictogramas.
 
