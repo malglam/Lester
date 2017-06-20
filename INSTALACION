@@ -10,10 +10,9 @@ servidor directamente. La aplicación funcionará correctamente.
 Instalación personalizada
 -------------------------
 
-- Si deseamos revisar el código y hacer una instalación más personalizada podemos bajarnos los
- fuentes del proyecto con el siguiente comando
+- Si deseamos revisar el código y hacer una instalación más personalizada podemos clonar el proyecto con el siguiente comando
 
-svn checkout https://forja.rediris.es/svn/lester
+git clone https://github.com/malglam/Lester.git
 
 Esto nos proporcionará el código de la aplicación, estructurado en dos directorios: src y web
 
